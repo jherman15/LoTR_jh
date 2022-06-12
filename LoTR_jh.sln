@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoTR_jh", "LoTR_jh\LoTR_jh.csproj", "{2F20E862-1EFA-4706-89F3-4E9E3C851CC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F20E862-1EFA-4706-89F3-4E9E3C851CC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F20E862-1EFA-4706-89F3-4E9E3C851CC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F20E862-1EFA-4706-89F3-4E9E3C851CC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F20E862-1EFA-4706-89F3-4E9E3C851CC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D451E35C-CCEB-4866-B685-8A753E679CE7}
+	EndGlobalSection
+EndGlobal
