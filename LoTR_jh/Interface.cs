@@ -9,6 +9,10 @@ namespace LoTR_jh
     class Interface
     {
 
+        Treasury treasure;
+
+        ElvenHouse Morgoth = new Noldor();
+
         //Engine engine = new Engine();
         public static void CreateHouse()
         {
@@ -47,20 +51,24 @@ namespace LoTR_jh
                 }
             }
 
+            Console.WriteLine("Okay, you've got your troops.");
+
+
             Console.WriteLine
                 ("Now you are facing the battle with Morgoth! \n" +
-                "If you've created a well-balanced houses, you may win this brutal fight. \n " +
-                "You can only create the total number of 5 troops" +
-                "a) Noldor \n " +
-                "b) Teleri \n " +
-                "c) Vanyar \n\n " +
-                "Your answer: ");
+                "If you've created a well-balanced houses, you may win this brutal fight. \n ")
 
-            Console.WriteLine("Okay, you've got your troops.")
 
-            HouseCreationEngine.
+
+
             Console.WriteLine("Morgoth health: " + Morgoth.Health);
             Console.WriteLine("Elven health: " + battleList[0].Health);
         }
+
+        int attack1 = Morgoth.GetNextAttack();
+        int attack2 = noldorHouse.GetNextAttack();
+        battleList[0].Health -= attack1;                    //tutaj zamiast battlelist[j]
+            Morgoth.Health -= attack2;
+
     }
 }

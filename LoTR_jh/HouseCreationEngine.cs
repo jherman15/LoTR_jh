@@ -56,7 +56,7 @@ namespace LoTR_jh
             HouseCreationEngine.choosing(noldorHouse);
             return noldorHouse;
             //Engine.choosing(h3);
-            treasure.CheckTreasury();
+            //treasure.CheckTreasury();
         }
 
         public static ElvenHouse CreateTeleri()
@@ -71,16 +71,16 @@ namespace LoTR_jh
             return vanyarHouse;
         }
 
-        public static AttackWithNoldor()
-        {
-            HouseCreationEngine.CreateNoldor();
-            //int attack1 = Morgoth.GetNextAttack();
-            //int attack2 = noldorHouse.GetNextAttack();
-            //battleList[0].Health -= attack1;                    //tutaj zamiast battlelist[j]
-            Morgoth.Health -= attack2;
+        //public static AttackWithNoldor()
+        //{
+        //    HouseCreationEngine.CreateNoldor();
+        //    int attack1 = Morgoth.GetNextAttack();
+        //    int attack2 = noldorHouse.GetNextAttack();
+        //    battleList[0].Health -= attack1;                    //tutaj zamiast battlelist[j]
+        //    Morgoth.Health -= attack2;
 
-            // } while (battleList[j].Health > 0 && Morgoth.Health > 0);
-        }
+        //    // } while (battleList[j].Health > 0 && Morgoth.Health > 0);
+        //}
 
     }
 }

@@ -14,6 +14,11 @@ namespace LoTR_jh
         //public void 
         public double craft=100;
 
+        public override int GetNextAttack()
+        {
+            return 2 * Attack;
+        }
+
 
 
 
