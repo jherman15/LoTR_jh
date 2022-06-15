@@ -11,7 +11,7 @@ namespace LoTR_jh
 
         Treasury treasure;
 
-        ElvenHouse Morgoth = new Noldor();
+        ElvenHouse Morgot = new Noldor();
 
         //Engine engine = new Engine();
         public static void CreateHouse()
@@ -61,14 +61,14 @@ namespace LoTR_jh
 
 
 
-            Console.WriteLine("Morgoth health: " + Morgoth.Health);
+            Console.WriteLine("Morgoth health: " + Morgot.Health);
             Console.WriteLine("Elven health: " + battleList[0].Health);
         }
 
         int attack1 = Morgoth.GetNextAttack();
-        int attack2 = noldorHouse.GetNextAttack();
+        int attack2 = HouseCreationEngine.CreateNoldor();
         battleList[0].Health -= attack1;                    //tutaj zamiast battlelist[j]
-            Morgoth.Health -= attack2;
+        Morgoth.Health -= attack2;
 
     }
 }
