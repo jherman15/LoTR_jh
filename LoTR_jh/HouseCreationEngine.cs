@@ -9,7 +9,7 @@ namespace LoTR_jh
 
         Treasury treasure;
 
-        ElvenHouse Morgoth = new Ainur();
+        static ElvenHouse Morgoth = new Ainur();
         public static void choosing(ElvenHouse x)
         {
             string choice = Console.ReadLine();
@@ -53,7 +53,7 @@ namespace LoTR_jh
             //battleList.Add(h1);                  // -> a co z tym?
             
             ElvenHouse noldorHouse = new Noldor();
-            HouseCreationEngine.choosing(noldorHouse);
+            //HouseCreationEngine.choosing(noldorHouse);
             return noldorHouse;
             //Engine.choosing(h3);
             //treasure.CheckTreasury();
@@ -71,16 +71,22 @@ namespace LoTR_jh
             return vanyarHouse;
         }
 
-        //public static AttackWithNoldor()
-        //{
-        //    HouseCreationEngine.CreateNoldor();
-        //    int attack1 = Morgoth.GetNextAttack();
-        //    int attack2 = noldorHouse.GetNextAttack();
-        //    battleList[0].Health -= attack1;                    //tutaj zamiast battlelist[j]
-        //    Morgoth.Health -= attack2;
+        public static ElvenHouse AttackWithNoldor()
+        {
+            HouseCreationEngine.CreateNoldor();
+            int attack1 = Morgoth.GetNextAttack();
+            int attack2 = noldorHouse.GetNextAttack();
+            battleList[0].Health -= attack1;                    //tutaj zamiast battlelist[j]
+            Morgoth.Health -= attack2;
 
-        //    // } while (battleList[j].Health > 0 && Morgoth.Health > 0);
-        //}
+            //int attack1 = Morgot.GetNextAttack();
+            //// int attack2 = HouseCreationEngine.CreateNoldor();          
+            //int attack2 = teleri.Attack;
+            //Morgot.Health -= teleri.Attack;
+            //Console.WriteLine("Morgoth health: " + Morgot.Health);                //te 5 linii skopiowane z interface
+
+            // } while (battleList[j].Health > 0 && Morgoth.Health > 0);
+        }
 
     }
 }

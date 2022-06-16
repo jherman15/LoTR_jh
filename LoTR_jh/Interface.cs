@@ -24,7 +24,7 @@ namespace LoTR_jh
             Console.WriteLine
                 ("This is a LoTR game, where you are able to create your own houses. \n" +
                 "What first house you want to create? \n " +
-                "You can only create the total number of 5 troops"\n +
+                "You can only create the total number of 5 troops \n" +
                 "a) Noldor \n " +
                 "b) Teleri \n " +
                 "c) Vanyar \n\n " +
@@ -40,11 +40,19 @@ namespace LoTR_jh
                 if (house == "Noldor")
                 {
                     HouseCreationEngine.CreateNoldor();
+
+
                     //battleList.Add(h2);
                 }
                 else if (house == "Teleri")
                 {
                     teleri = HouseCreationEngine.CreateTeleri();
+                    Console.WriteLine("Now you can start decoration" +
+                        "a) Armor \n " +
+                        "b) Defence \n " +
+                        "c) Magic \n\n " +
+                        "Your answer: ");
+                    HouseCreationEngine.choosing(teleri);
                     //battleList.Add(h2);
                     //Console.WriteLine("1. Armor \n 2. Defence \n 3. Magic \n What do you choose?\n Your answer: ");
                     //string choice = Console.ReadLine();
@@ -69,11 +77,11 @@ namespace LoTR_jh
             Console.WriteLine("Morgoth health: " + Morgot.Health);
             //Console.WriteLine("Elven health: " + battleList[0].Health);
 
-            int attack1 = Morgot.GetNextAttack();
-            // int attack2 = HouseCreationEngine.CreateNoldor();          
-            int attack2 = teleri.Attack;
-            Morgot.Health -= teleri.Attack;
-            Console.WriteLine("Morgoth health: " + Morgot.Health);
+            //int attack1 = Morgot.GetNextAttack();
+            //int attack2 = HouseCreationEngine.CreateNoldor();
+            //int attack2 = teleri.Attack;
+            //Morgot.Health -= teleri.Attack;
+            //Console.WriteLine("Morgoth health: " + Morgot.Health);
 
         }
 
